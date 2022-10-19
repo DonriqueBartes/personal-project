@@ -13,8 +13,8 @@ h1 {
 .bgColor {
 
     background-color: rgb(224, 62, 89);
-    width: vw;
-    height: vh;
+    max-width: 3000px;
+    max-height: 8000px;
 }
 
 
@@ -138,32 +138,23 @@ Styling and design for back to the top button */
 
 .button_box {
 
-    height: 20px;
-    width: 30px;
+    height: 5vh;
+    width: 4vw;
     position: fixed;
-    bottom: 90px;
-    left: 10px;
+    bottom: 30px;
+    left: 40px;
 
 }
 
-.BT_button {
-    background-color: #129aeedc;
-    border: none;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 26px;
-    margin: 20px;
-    opacity: 0.8;
-    transition: 0.95s;
-    text-decoration: none;
+.top_button {
+    height: 100%;
+    width: 100%;
     cursor: pointer;
 
 
 }
 
-.BT_button:hover {
+.top_button:hover {
     opacity: 1.5;
     display: flex;
 
@@ -180,10 +171,11 @@ Styling and design for back to the top button */
 
 .serv-grid {
 
-    clear: both;
-    display: grid;
+    
+    display: flex;
+    /* display: grid;
     grid-template-columns: auto auto;
-    width: vw;
+    width: vw; */
 
 }
 
@@ -194,8 +186,8 @@ Styling and design for back to the top button */
 
 .flipCard {
     background-color: transparent;
-    height: 400px;
-    width: 800px;
+    height: 800px;
+    width: 600px;
     perspective: 1000px;
     margin: auto;
     text-align: center;
@@ -205,8 +197,8 @@ Styling and design for back to the top button */
 .flipCard-inner {
 
     position: relative;
-    height: 400px;
-    width: 800px;
+    height: 800px;
+    width: 600px;
     text-align: center;
     transition: transform 0.4s;
     transform-style: preserve-3d;
@@ -222,7 +214,7 @@ Styling and design for back to the top button */
 .flipCard-back {
     position: absolute;
     width: 600px;
-    height: 600px;
+    height: 800px;
     -webkit-backface-visibility: hidden;
     /* Safari */
     backface-visibility: hidden;
@@ -232,9 +224,9 @@ Styling and design for back to the top button */
 
 .flipCard-front {
     background-color: white;
-    color: pink;
-    height: 400px;
-    width: 800px;
+    color: rgb(238, 174, 202);
+    height: 800px;
+    width: 600px;
     margin: auto;
     text-align: center;
     border: 3px solid;
@@ -246,13 +238,13 @@ Styling and design for back to the top button */
 
 .flipCard-back {
     flex-wrap: wrap;
-    height: 400px;
-    width: 800px;
+    height: 800px;
+    width: 600px;
     clear: both;
     margin: auto;
     text-align: center;
     background-color: white;
-    color: pink;
+    color: rgb(238, 174, 202);
     transform: rotateY(180deg);
     border: 3px solid;
     float: center;
@@ -267,7 +259,7 @@ Styling and design for back to the top button */
 .service-card-front {
 
     background-color: transparent;
-    color: black;
+    color: rgb(238, 174, 202);
     text-align: center;
 
 
@@ -280,8 +272,8 @@ Styling and design for back to the top button */
     position: relative;
     left: 200px;
     margin: 30px;
-    height: 500px;
-    width: 450px;
+    height: 800px;
+    width: 600px;
     overflow: hidden;
     padding: 5px;
     box-shadow: 10px 10px 10px 10px rgb(0, 0, 0, 0.4);
@@ -296,7 +288,7 @@ Styling and design for back to the top button */
     content: '';
     background: rgba(255, 255, 255, 0.05);
     border-radius: 40%;
-    height: 500px;
+    height: 900px;
     width: 50px;
     padding: 0px;
     margin-left: auto;
@@ -315,8 +307,8 @@ Styling and design for back to the top button */
 .img-border {
     
     display: block;
-    height: 500px;
-    width: 450px;
+    height: 800px;
+    width: 600px;
     padding: 0px;
     margin-left: auto;
     margin-right: auto;
@@ -338,8 +330,10 @@ body, html {
 /*      nav bar         */
 
 .topnav{
-    background-color: black;
+    background-color: transparent;
     overflow: hidden;
+    width: vw;
+    height: 100px;
 }
 
 .topnav ul{
