@@ -5,16 +5,34 @@
 }
 
 .top_nav{
-    background-color: var(--white);
+    display: flex;
+    background-color: var(--pink);
     overflow: hidden;
+    justify-content: center;
 }
 
 .top_nav a{
-    text-align: center;
-    float: right;
-    display: block;
-    color: var(--pink);
-    padding: 14px 16px;
-    font-size: 14px;
+    color: var(--white);
+    padding: 10px 90px;
+    font-size: 18px;
+    justify-content: center;
     text-decoration: none;
+}
+
+#header{
+    display: flex;
+    margin: auto;
+    width: 100vw;
+    justify-content: center;
+}
+
+.pic{
+    width: 20px;
+    height: 20px;
+    padding-left: 20px;
+}
+
+#logo{
+    height: 30vh;
+    width: 15vw;
 }
