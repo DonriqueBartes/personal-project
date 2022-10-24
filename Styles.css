@@ -1,0 +1,20 @@
+:root{
+    --pink: rgb(238, 174, 202);
+    --lightpink: rgba(255, 224, 238, 1);
+    --white: rgba(255, 255, 255);
+}
+
+.top_nav{
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.top_nav a{
+    text-align: center;
+    float: right;
+    display: block;
+    color: var(--pink);
+    padding: 14px 16px;
+    font-size: 14px;
+    text-decoration: none;
+}
