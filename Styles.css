@@ -4,6 +4,17 @@
     --white: rgba(255, 255, 255);
 }
 
+.socials {
+    display: flex;
+    list-style: none;
+}
+
+.pic{
+    width: 20px;
+    height: 20px;
+    padding-left: 10px;
+}
+
 .top_nav{
     display: flex;
     background-color: var(--pink);
