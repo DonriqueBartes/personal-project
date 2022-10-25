@@ -71,17 +71,17 @@ body{
 }
 
 .pic{
-    width: 20px;
-    height: 20px;
-    padding-left: 20px;
+    width: 1.5vw;
+    height: 3vh;
+    padding-left: 2vw;
 }
 
-#Logo{
+#logo{
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 115%;
-    width: 15%;
+    width: 25%;
 }
 
 .contact-form{
@@ -102,6 +102,23 @@ body{
     background-color: green;
 }
 
-.contact-us-image{
+.contact-details{
     padding: 10px;
+}
+
+.client-details{
+    width: 100%;
+}
+.client-message{
+    width: 100%;
+    height: 10vh;
+}
+
+#submit-button{
+    background-color: grey;
+    text-decoration: none;
+    font-size: 1.5vw;
+    padding: 1.5vh 1.5vw;
+    border: none;
+    cursor: pointer;
 }
