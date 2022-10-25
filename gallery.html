@@ -2,71 +2,142 @@
 
 <html lang="en">
 
-<link rel="stylesheet" href="galleryS.css">
+
 
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./gallery.css">
+
+
     <title>Gallery</title>
 </head>
 
 
-
-<div class="gallery-message">
-    <h1>
-        For your viewing pleasure
-    </h1>
-</div>
+<body>
 
 
-
-<div class="gallery-container">
-
-    <div class="grid-container">
-
-
-        <div class="pic1">
-
-            <img class="gallery-images1" src="Assets/gallery-images/IMG_3496.jpeg">
-
-        </div>
-
-        <div class="pic2">
-
-            <img class="gallery-images2" src="Assets/gallery-images/IMG_3501.jpeg">
-
-        </div>
-        <div class="pic3">
-
-            <img class="gallery-images2" src="Assets/gallery-images/IMG_5092.jpeg">
-
-        </div>
-        <div class="pic2">
-
-            <img class="gallery-images2" src="Assets/gallery-images/IMG_3501.jpeg">
-
-        </div>
-        <div class="pic3">
-
-            <img class="gallery-images2" src="Assets/gallery-images/IMG_5092.jpeg">
-
-        </div>
-        <div class="pic1">
-            <img class="gallery-images1" src="Assets/gallery-images/IMG_5139.jpeg">
-
-
-        </div>
+    <div class="gallery-message">
+        <h1>
+            For your viewing pleasure
+        </h1>
     </div>
 
 
 
+    <div class="gallery-container">
+
+        <div class="grid-container">
+
+
+            <div id="gallery-imgs" class="pic1">
+                <img class="gallery-images1" src="./Assets/gallery-images/IMG_3496.jpeg" alt="This is the first image"
+                    data-original="./Assets/gallery-images/IMG_3496.jpeg" />
+            </div>
+
+            
 
 
 
 
-    <!-- <img class="gallery-images" src="Assets/gallery-images/IMG_5714.jpeg">
+
+            <div id="gallery-imgs" class="pic2">
+
+                <img class="gallery-images2" src="Assets/gallery-images/IMG_3501.jpeg"
+                data-original="./Assets/gallery-images/IMG_3501.jpeg">
+
+            </div>
+            <div id="gallery-imgs" class="pic3">
+
+                <img class="gallery-images2" src="Assets/gallery-images/IMG_5092.jpeg"
+                data-original="./Assets/gallery-images/IMG_5092.jpeg">
+
+            </div>
+            <div id="gallery-imgs" class="pic2">
+
+                <img class="gallery-images2" src="Assets/gallery-images/IMG_5139.jpeg"
+                data-original="./Assets/gallery-images/IMG_5139.jpeg">
+
+            </div>
+            <div id="gallery-imgs" class="pic3">
+
+                <img class="gallery-images2" src="Assets/gallery-images/IMG_5714.jpeg"
+                data-original="./Assets/gallery-images/IMG_5714.jpeg">
+
+            </div>
+            <div id="gallery-imgs" class="pic1">
+                <img class="gallery-images1" src="Assets/gallery-images/IMG_5918.jpeg"
+                data-original="./Assets/gallery-images/IMG_5918.jpeg">
+
+
+            </div>
+        </div>
+        <div class="modal">
+            <img src="./Assets/gallery-images/IMG_3496.jpeg" alt="" class="full-img" />
+            <p class="caption">
+                This is the caption.
+            </p>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="gallery-container">
+
+        <div class="grid-container">
+
+
+            <div id="gallery-imgs" class="pic2">
+
+                <img class="gallery-images1" src="Assets/gallery-images/IMG_6143.jpeg"
+                data-original="./Assets/gallery-images/IMG_6143.jpeg">
+
+            </div>
+
+            <div id="gallery-imgs" class="pic1">
+
+                <img class="gallery-images2" src="Assets/gallery-images/IMG_6250.jpeg"
+                data-original="./Assets/gallery-images/IMG_6250.jpeg">
+
+            </div>
+            <div id="gallery-imgs" class="pic3">
+
+                <img class="gallery-images1" src="Assets/gallery-images/IMG_6495.jpeg"
+                data-original="./Assets/gallery-images/IMG_6495.jpeg">
+
+            </div>
+            <div id="gallery-imgs" class="pic1">
+
+                <img class="gallery-images1" src="Assets/gallery-images/IMG_6757.jpeg"
+                data-original="./Assets/gallery-images/IMG_6757.jpeg">
+
+            </div>
+            <div id="gallery-imgs" class="pic3">
+
+                <img class="gallery-images2" src="Assets/gallery-images/IMG_7675.jpeg"
+                data-original="./Assets/gallery-images/IMG_7675.jpeg">
+
+            </div>
+            <div id="gallery-imgs" class="pic2">
+                <img class="gallery-images1" src="Assets/gallery-images/IMG_8163.jpeg"
+                data-original="./Assets/gallery-images/IMG_8163.jpeg">
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <!-- <img class="gallery-images" src="Assets/gallery-images/IMG_5714.jpeg">
 
 
     <img class="gallery-images" src="Assets/gallery-images/IMG_5918.jpeg">
@@ -103,100 +174,17 @@
     <img class="gallery-images" src="Assets/gallery-images/IMG_3496.jpeg"> -->
 
 
-</div>
-
-<div class="gallery-container">
-
-    <div class="grid-container">
-
-
-        <div class="pic2">
-
-            <img class="gallery-images1" src="Assets/gallery-images/IMG_3496.jpeg">
-
-        </div>
-
-        <div class="pic1">
-
-            <img class="gallery-images2" src="Assets/gallery-images/IMG_3501.jpeg">
-
-        </div>
-        <div class="pic3">
-
-            <img class="gallery-images1" src="Assets/gallery-images/IMG_5092.jpeg">
-
-        </div>
-        <div class="pic1">
-
-            <img class="gallery-images1" src="Assets/gallery-images/IMG_3501.jpeg">
-
-        </div>
-        <div class="pic3">
-
-            <img class="gallery-images2" src="Assets/gallery-images/IMG_5092.jpeg">
-
-        </div>
-        <div class="pic2">
-            <img class="gallery-images1" src="Assets/gallery-images/IMG_5139.jpeg">
-
-
-        </div>
         
-    </div>
 
 
+        <script src="./gallery.js"></script>
+</body>
 
-
-
-
-
-    <!-- <img class="gallery-images" src="Assets/gallery-images/IMG_5714.jpeg">
-
-
-    <img class="gallery-images" src="Assets/gallery-images/IMG_5918.jpeg">
-
-
-    <img class="gallery-images" src="Assets/gallery-images/IMG_6143.jpeg">
-
-
-    <img class="gallery-images" src="Assets/gallery-images/IMG_6250.jpeg">
-
-
-    <img class="gallery-images" src="Assets/gallery-images/IMG_6495.jpeg">
-
-
-    <img class="gallery-images" src="Assets/gallery-images/IMG_6757.jpeg">
-
-
-    <img class="gallery-images" src="Assets/gallery-images/IMG_7675.jpeg">
-
-
-    <img class="gallery-images" src="Assets/gallery-images/IMG_8163.jpeg">
-
-
-    <img class="gallery-images" src="Assets/gallery-images/IMG_8855.jpeg">
-
-
-    <img class="gallery-images" src="Assets/gallery-images/IMG_9231.jpeg">
-
-
-
-    <img class="gallery-images" src="Assets/gallery-images/IMG_9483.jpeg">
-
-
-    <img class="gallery-images" src="Assets/gallery-images/IMG_3496.jpeg"> -->
-
-   
-    <div class="BT-button">
-        <a href="#top">
-            <img class="button-icon" src="Assets\icons\BT button.png">
-        </a>
+<div class="BT-button">
+    <a href="#top">
+        <img class="button-icon" src="Assets\icons\BT button.png">
+    </a>
 </div>
-
-
-
-
-
 
 
 </html>
