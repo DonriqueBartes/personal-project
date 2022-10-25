@@ -4,9 +4,42 @@
     --white: rgba(255, 255, 255);
 }
 
+body{
+    min-height: 100vh;
+    margin: 0;
+}
+
+.social-media{
+    display: flex;
+    float: left;
+    width: 25%;
+    align-items: center;
+    background-color: red;
+}
+
+.top-logo{
+    display: flex;
+    float: left;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+.empty-container{
+    display: flex;
+    float: right;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+
 .socials {
     display: flex;
     list-style: none;
+    margin-top: 1vh;
+    padding-left: 0;
 }
 
 .pic{
@@ -15,26 +48,26 @@
     padding-left: 10px;
 }
 
-.top_nav{
-    display: flex;
+.nav-bar{
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
     background-color: var(--pink);
     overflow: hidden;
-    justify-content: center;
+
 }
 
-.top_nav a{
+.top-nav a{
     color: var(--white);
-    padding: 10px 90px;
+    padding: 1vh 5vw ;
     font-size: 18px;
     justify-content: center;
     text-decoration: none;
 }
 
-#header{
-    display: flex;
-    margin: auto;
-    width: 100vw;
-    justify-content: center;
+.top-nav a.active{
+    background-color: var(--white);
+    color: var(--pink);
 }
 
 .pic{
@@ -43,7 +76,32 @@
     padding-left: 20px;
 }
 
-#logo{
-    height: 30vh;
-    width: 15vw;
+#Logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 115%;
+    width: 15%;
+}
+
+.contact-form{
+    display: flex;
+    float: right;
+    width: 50%;
+    justify-content: center;
+    font-size: 1.5vw;
+    background-color: teal;
+}
+
+.image-container{
+    display: flex;
+    float: left;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
+
+.contact-us-image{
+    padding: 10px;
 }
