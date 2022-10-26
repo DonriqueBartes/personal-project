@@ -1,51 +1,41 @@
-:root{
-    --eggshell: #f0ead6;
-    --lightpink: rgba(255, 224, 238, 1);
+:root {
+    --egg: #F0EBD5;
     --white: rgba(255, 255, 255);
-    --background: #f5f5f5
+    --whitesmoke: whitesmoke;
+    --Montserrat: 'Montserrat', sans-serif;
+    --Open-sans: 'Open Sans', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
 }
 
-body{
+body {
+    font-family: var(--Montserrat);
     min-height: 100vh;
     margin: 0;
-    background: white;
-    font-family: Georgia;
-    /*
-    background: var(--background)
-
-     */
+    background: var(--whitesmoke);
 }
 
-.social-media{
+.social-media {
     display: flex;
-    float: left;
+    float: right;
     width: 25%;
     align-items: center;
-    /*
-    background-color: red;
-     */
+    transform: translateY(30%);
 }
 
-.top-logo{
+.top-logo {
     display: flex;
-    float: left;
+    float: right;
     width: 50%;
     justify-content: center;
     align-items: center;
-    /*
-    background-color: aqua;
-     */
 }
 
 .empty-container{
     display: flex;
-    float: right;
+    float: left;
     width: 25%;
     justify-content: center;
     align-items: center;
-    /*
-    background-color: yellow;
-     */
 }
 
 .socials {
@@ -55,47 +45,43 @@ body{
     padding-left: 0;
 }
 
-.pic{
-    width: 20px;
-    height: 20px;
-    padding-left: 10px;
-}
-
-.nav-bar{
-    display: inline-flex;
-    width: 100%;
-    justify-content: center;
-    background-color: var(--eggshell);
-    overflow: hidden;
-
-}
-
-.top-nav a{
-    color: var(--white);
-    padding: 1vh 5vw ;
-    font-size: 3vh;
-    justify-content: center;
-    text-decoration: none;
-}
-
-.top-nav a.active{
-    background-color: var(--white);
-    color: var(--eggshell);
-}
-
-.pic{
-    width: 1.5vw;
-    height: 3vh;
-    padding-left: 2vw;
-    padding-top: 5vh;
-}
-
-#logo{
+#logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 115%;
-    width: 25%;
+    height: 100%;
+    width: 35%;
+}
+
+.nav-bar {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--white);
+    overflow: hidden;
+    height: 6vh;
+}
+
+.top-nav a {
+    color: black;
+    padding: 2vh 5vw;
+    font-size: 3vh;
+    justify-content: center;
+    text-decoration: none;
+    margin: auto;
+}
+
+.top-nav a.active {
+    background-color: var(--white);
+    border: 10px solid var(--egg);
+}
+
+.pic {
+    opacity: 0.9;
+    width: 2vw;
+    height: 4vh;
+    padding-left: 2vw;
+    padding-top: 10vh;
 }
 
 .contact-form{
@@ -104,9 +90,7 @@ body{
     width: 50%;
     justify-content: center;
     font-size: 1.5vw;
-    /*
-    background-color: teal;
-     */
+    font-family:'Montserrat', sans-serif;
 }
 
 .label{
@@ -119,9 +103,10 @@ body{
     width: 50%;
     justify-content: center;
     align-items: center;
-    /*
-    background-color: green;
-     */
+}
+
+.heading{
+    font-size: 1.5vw;
 }
 
 .contact-details{
@@ -133,7 +118,7 @@ body{
     width: 70%;
     height: 5vh;
     font-size: 4vh;
-    border-radius: 3px;
+    border-radius: 7px;
 }
 .client-message{
     margin-top: 2vh;
@@ -145,14 +130,33 @@ body{
 
 #submit-button{
     margin-top: 5vh;
-    color: white;
-    background: red;
+    background: var(--egg);
     height: 6vh;
     width: 71%;
     position: center;
     border: none;
     outline: none;
-    border-radius: 6px;
-    font-size: 15px;
+    border-radius: 10px;
+    font-size: 1vw;
     cursor: pointer;
+}
+
+.button-icon {
+    position: fixed;
+    height: 5%;
+    width: 4%;
+    right: 2%;
+    bottom: 5%;
+}
+.BT-button {
+    height: 50px;
+    width: 50px;
+}
+
+#bottom-social-media{
+    justify-content: center;
+}
+
+#bottom-social-media .pic{
+    padding: 2vw;
 }
