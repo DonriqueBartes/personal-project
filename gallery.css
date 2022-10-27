@@ -158,21 +158,72 @@ body {
 .grid-container {
 
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 5px;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
     background-color: white;
     margin: auto;
 }
 
-.gallery-images {
+.slot1 {
 
-    height: auto;
-    width: auto;
+    width: 100%;
+    height: 50%;
+
 }
 
-#gallery-imgs {
+.slot2 {
+
+    width: 60%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: block;
+
+}
+
+.slot3 {
+
+    width: 100%;
+    height: 50%;
+
+}
+
+.pic-div1 {
+
+    justify-content: center;
+    /* align-items: center; */
+    display: block;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+}
+
+.pic-div2 {
+
+    justify-content: center;
+    align-items: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+
+}
+
+.pic-div3 {
+
+    justify-content: center;
+    /* align-items: center; */
+    display: block;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+}
+
+/* #gallery-imgs {
 
     transition: 0.3s;
+    margin: 0;
+
 
 }
 
@@ -181,44 +232,76 @@ body {
     opacity: 0.6;
     cursor: pointer;
 
-}
-
-.gallery-images1 {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
+} */
 
 
-.gallery-images1 {
 
-    height: 75%;
-    width: 70%;
-    margin: 5%;
 
-}
 
-.gallery-images2 {
 
-    height: 70%;
-    width: 80%;
-    margin: 2%;
-}
+
+
 
 .pic1 {
 
     grid-row: 1 / span 2;
     justify-content: center;
     align-items: center;
+    margin: 0;
+
+
 }
 
 .pic2 {
 
     grid-row: 1 / span 1;
-    justify-content: center;
+    align-items: center;
+    /* justify-content: center; */
 
 }
+
+.pic3 {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+.pic4 {
+
+    grid-row: 1 / span 2;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+
+.pic5 {
+
+    grid-row: 1 / span 2;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+
+.pic6 {}
+
+.gallery-images5 {
+
+
+    margin-left: 5%;
+    margin-right: auto;
+    height: 95%;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
 
 
 .button-icon {
@@ -234,4 +317,18 @@ body {
     right: 30px;
     bottom: 50px;
     margin: auto;
+}
+
+
+
+.gallery-images4 {
+
+
+    margin-left: 5%;
+    margin-right: auto;
+    height: 95%;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+
 }
