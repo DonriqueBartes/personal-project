@@ -29,7 +29,7 @@ body {
     border-radius: 30px;
     box-shadow: 10px rgba(0, 0, 0, 0.9);
     /* opacity: 1; */
-    border: 15px solid var(--egg);
+    border: 5px solid var(--egg);
 
 
 }
@@ -90,6 +90,7 @@ body {
     background-color: var(--white);
     overflow: hidden;
     height: 30px;
+    border: 5px solid var(--egg);
 }
 
 .top-nav a {
@@ -100,8 +101,8 @@ body {
 }
 
 .top-nav a.active {
-    background-color: var(--white);
-    border: 5px solid var(--button-colour);
+    background-color: var(--whitesmoke);
+    border: 5px solid var(--egg);
 }
 
 .pic {
@@ -123,6 +124,11 @@ body {
     display: block;
     text-align: center;
     font-size: 2rem;
+    margin: 10px 10px;
+    background-color: var(--white);
+    border-top: 2px solid var(--egg);
+    border-bottom: 2px solid var(--egg);
+
 }
 
 .modal {
@@ -148,7 +154,7 @@ body {
     pointer-events: all;
     z-index: 2;
     border-radius: 20px;
-    border: 15px solid var(--egg);
+    border: 5px solid var(--egg);
 
 
 
@@ -189,17 +195,20 @@ body {
 .gallery-container {
 
     padding: 10px;
-    width: 98%;
+    width: 90%;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: var(--whitesmoke);
+    margin-right: 5%;
+    margin-left: 2%;
 
 }
 
 .grid-container {
 
     display: grid;
-    grid-template-columns: 30% 40% 30%;
+    grid-template-columns: 30% 40.4% 30%;
     row-gap: 20px;
     column-gap: 15px;
     background-color: white;
