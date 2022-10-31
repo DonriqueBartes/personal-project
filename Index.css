@@ -62,6 +62,12 @@ body {
     border: 5px solid var(--button-colour);
 }
 
+.top-nav a:hover{
+    box-shadow: 0 2px 2px 0 var(--button-colour);
+    transform: translateY(-3px);
+    opacity: 0.8;
+}
+
 .pic {
     opacity: 0.9;
     width: 25px;
@@ -75,6 +81,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 200px;
+    cursor: pointer;
 }
 
 .card-divs{
