@@ -1,6 +1,14 @@
 let clientInfo = [];
 
-let clientForm =
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("sub-button").addEventListener('click', submitMessage);
+});
+
+var submitMessage = () => {
+
+    let clientForm =
 {
     id: Date().toString(),
     clientName: document.getElementById('firstname').value,
@@ -9,17 +17,11 @@ let clientForm =
     clientMessage: document.getElementById("messageBox").value
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("sub-button").addEventListener('click', submitMessage);
-});
-
-var submitMessage = (e) => {
-
-    e.preventDefault();
-    clientInfo.push(clientForm);
-    document.querySelector('form').reset();
-    console.warn('added', { clientForm });
+    // e.preventDefault();
     clientResponse();
+    clientInfo.push(clientForm);
+    console.warn('added', { clientForm });
+    // document.querySelector('form').reset();
 
 }
 
