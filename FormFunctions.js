@@ -9,13 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
 var submitMessage = () => {
 
     let clientForm =
-{
-    id: Date().toString(),
-    clientName: document.getElementById('firstname').value,
-    clientSurname: document.getElementById("surname").value,
-    clientEmail: document.getElementById("email").value,
-    clientMessage: document.getElementById("messageBox").value
-}
+    {
+        id: Date().toString(),
+        clientName: document.getElementById('firstname').value,
+        clientSurname: document.getElementById("surname").value,
+        clientEmail: document.getElementById("email").value,
+        clientMessage: document.getElementById("messageBox").value
+    }
 
     // e.preventDefault();
     clientResponse();
@@ -25,8 +25,8 @@ var submitMessage = () => {
 
 }
 
-clientResponse = (clientForm) => {
-    axios.post('https://reqres.in/api/users', clientForm)
+clientResponse = async (clientForm) => {
+    await axios.post('https://vjaxow8lkh.execute-api.us-east-1.amazonaws.com/test-stage', clientForm)
         .then(response => {
             const addedUser = response.data;
             console.log(`POST: user is added`, addedUser);

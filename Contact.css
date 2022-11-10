@@ -161,7 +161,7 @@ body {
 }
 
 .submit-button {
-    margin-top: 20px;
+    margin-top: 15px;
     background: var(--button-colour);
     height: 25px;
     width: 300px;
@@ -173,6 +173,24 @@ body {
 }
 
 .submit-button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+    background-color: var(--button-colour);
+}
+
+.refresh-button {
+    margin-top: 10px;
+    background: var(--button-colour);
+    height: 25px;
+    width: 100px;
+    position: center;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.refresh-button:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     transform: translateY(-1px);
     background-color: var(--button-colour);
