@@ -1,10 +1,7 @@
-let clientInfo = [];
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("sub-button").addEventListener('click', submitMessage);
 });
+
 
 var submitMessage = () => {
 
@@ -17,26 +14,30 @@ var submitMessage = () => {
         clientMessage: document.getElementById("messageBox").value
     }
 
-    // e.preventDefault();
-    clientResponse();
-    clientInfo.push(clientForm);
+    console.log(clientForm);
+
+    
+    clientResponse(clientForm);
     console.warn('added', { clientForm });
-    // document.querySelector('form').reset();
 
 }
 
-clientResponse = async (clientForm) => {
-    await axios.post('https://vjaxow8lkh.execute-api.us-east-1.amazonaws.com/test-stage', clientForm)
+clientResponse = async (myClientForm) => {
+
+    await axios.post('https://vjaxow8lkh.execute-api.us-east-1.amazonaws.com/test-stage', myClientForm)
         .then(response => {
-            const addedUser = response.data;
-            console.log(`POST: user is added`, addedUser);
-            // append to DOM
-            // appendToDOM(addedUser);
+            console.log('res: ', response);
+            console.log(`POST: user is added`, { myClientForm });
         })
+
         .catch(error => console.error(error));
 };
 
+//Links below are for APIs to use for testing and endpoint destination
 
+// https://reqres.in/api/users
+
+// https://vjaxow8lkh.execute-api.us-east-1.amazonaws.com/test-stage
 
 
 
