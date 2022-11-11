@@ -20,6 +20,10 @@ errorMessage = function () {
     modalBox.innerHTML = 'Invalid details has been entered';
 }
 
+refBttn.onclick = function () {
+    location.reload();
+
+}
 
 
 let fnameCheck = fname;
@@ -68,7 +72,4 @@ window.onclick = function (event) {
 
 }
 
-refBttn.onclick = function () {
-    document.querySelector('form').reset();
 
-}

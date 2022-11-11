@@ -41,6 +41,7 @@ function setErrorFor(input, message) {
     console.log("inSetError function");
     const formControl = input.parentElement;
     const small = formControl.querySelector('small');
+
     small.innerText = message;
     formControl.className = 'form-control error';
 }
