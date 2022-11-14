@@ -90,6 +90,7 @@ body {
 }
 
 .contact-form {
+    padding-top: 50px;
     display: flex;
     float: right;
     width: 50%;
@@ -97,6 +98,8 @@ body {
 }
 
 .image-container {
+    padding-top: 50px;
+    font-family: var(--Montserrat);
     display: flex;
     float: left;
     width: 50%;
@@ -247,10 +250,17 @@ body {
 }
 
 
+.follow-container {
+
+    padding: 10px;
+    background-color: var(--whitesmoke);
+    display: block;
+    width: 100%;
+}
+
 
 
 .follow-for-more {
-    margin-top: 100px;
     font-size: 16px;
 }
 
