@@ -2,15 +2,24 @@
     --egg: #F0EBD5;
     --white: rgba(255, 255, 255);
     --whitesmoke: whitesmoke;
+    --border-outline-light: #D5D5F0;
     --button-colour: #F0E1C9;
+    --button-new: #7171A3;
+    --nav-bar: #D5D5F0;
     --Montserrat: 'Montserrat', sans-serif;
+
+}
+
+#h1 {
+    padding: 0;
+    margin: 0;
 }
 
 body {
     font-family: var(--Montserrat);
     min-height: 800px;
     margin: 0;
-    background: var(--whitesmoke);
+    background: #f7f7f7;
     font-size: 16px;
 }
 
@@ -46,25 +55,56 @@ body {
     display: inline-flex;
     width: 100%;
     justify-content: center;
-    background-color: var(--white);
+    text-align: center;
+    background-color: var(--nav-bar);
     overflow: hidden;
-    height: 30px;
+    height: 50px;
+    text-decoration: none;
+    color: black;
 }
 
-.top-nav a {
-    color: black;
+.nav-heading {
+    justify-content: center;
+    text-align: center;
+    height: 40px;
     font-size: 20px;
     text-decoration: none;
+    color: black;
     padding: 0 100px 0 100px;
+    align-items: center;
+    display: inline-flex;
+
 }
 
-.top-nav a.active {
-    background-color: var(--white);
+.nav-heading a {
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+
+#active-a {
+    color: var(--border-outline-light);
+    text-decoration: none;
+}
+
+#active {
+    height: 46px;
+    color: var(--white);
+    background-color: var(--button-new);
+    border: 3px solid var(--button-new);
+}
+
+
+.nav-heading .active {
+    background: var(--white);
     border: 5px solid var(--button-colour);
 }
 
-.top-nav a:hover {
-    box-shadow: 0 2px 2px 0 var(--button-colour);
+.nav-heading :hover {
+    height: 20px;
+    border-bottom: 2px  solid black;
+    width: 100%;
     transform: translateY(-3px);
     opacity: 0.8;
 }
@@ -87,9 +127,12 @@ body {
 
 .heading {
     text-align: center;
+    padding: 0;
+    margin: auto;
 }
 
 .contact-form {
+    background-color: var(--white);
     padding-top: 50px;
     display: flex;
     float: right;
@@ -109,6 +152,8 @@ body {
 }
 
 .container {
+    /* border: 5px solid var(--border-outline-light);
+    border-radius: 1%; */
     background-color: white;
     overflow: hidden;
     width: 400px;
@@ -121,26 +166,28 @@ body {
 }
 
 .form {
-    padding: 30px 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .form-control {
-    margin-bottom: 10px;
-    padding-bottom: 20px;
+    font-family: var(--Montserrat);
     position: relative;
 }
 
 .form-control label {
     display: inline-block;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
 }
 
 .form-control input {
-    border: 2px solid #f0f0f0;
+
+    border: 1px solid var(--border-outline-light);
     border-radius: 4px;
     display: block;
-    font-size: 14px;
+    font-size: 16px;
     width: 100%;
+    font-family: var(--Montserrat);
 }
 
 .form-control.success input {
@@ -164,10 +211,14 @@ body {
 }
 
 .submit-button {
+    font-weight: 500;
+    font-family: var(--Montserrat);
+    font-size: 18px;
     margin-top: 15px;
-    background: var(--button-colour);
-    height: 25px;
-    width: 300px;
+    background: var(--button-new);
+    color: white;
+    height: 35px;
+    width: 100%;
     position: center;
     border: none;
     outline: none;
@@ -178,17 +229,19 @@ body {
 .submit-button:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     transform: translateY(-1px);
-    background-color: var(--button-colour);
+    background-color: var(--button-new);
 }
 
 .refresh-button {
+    font-weight: 700;
+    font-family: var(--Montserrat);
+    font-size: 16px;
     margin-top: 10px;
-    background: var(--button-colour);
-    height: 25px;
-    width: 100px;
+    background-color: var(--white);
+    border: 2px solid #D5D5F0;
+    height: 35px;
+    width: 100%;
     position: center;
-    border: none;
-    outline: none;
     border-radius: 30px;
     cursor: pointer;
 }
@@ -196,7 +249,17 @@ body {
 .refresh-button:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     transform: translateY(-1px);
-    background-color: var(--button-colour);
+    background-color: #D5D5F0;
+}
+
+#messageBox {
+    border: 1px solid var(--border-outline-light);
+    width: 100%;
+}
+
+.textBox {
+    font-family: var(--Montserrat);
+    font-size: 16px;
 }
 
 /* .client-details{
@@ -252,22 +315,18 @@ body {
 
 .follow-container {
 
-    padding: 10px;
-    background-color: var(--whitesmoke);
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
     display: block;
     width: 100%;
 }
 
 
-
-.follow-for-more {
-    font-size: 16px;
-}
-
 .follow-socials li {
     list-style-type: none;
     display: inline-block;
-    padding-left: 40px;
+    /* padding-left: 40px; */
 }
 
 .follow-socials img {
