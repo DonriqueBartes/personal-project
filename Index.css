@@ -1,0 +1,143 @@
+:root {
+    --egg: #F0EBD5;
+    --white: rgba(255, 255, 255);
+    --whitesmoke: whitesmoke;
+    --button-colour: #F0E1C9;
+    --Montserrat: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--Montserrat);
+    min-height: 800px;
+    margin: 0;
+    background: var(--whitesmoke);
+}
+
+.social-media {
+    display: flex;
+    float: right;
+    width: 25%;
+}
+
+.top-logo {
+    display: flex;
+    float: right;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty-container {
+    display: flex;
+    float: left;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    list-style: none;
+    margin-top: 0;
+}
+
+.nav-bar {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--white);
+    overflow: hidden;
+    height: 30px;
+}
+
+.top-nav a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 100px 0 100px;
+}
+
+.top-nav a.active {
+    background-color: var(--white);
+    border: 5px solid var(--button-colour);
+}
+
+.top-nav a:hover{
+    box-shadow: 0 2px 2px 0 var(--button-colour);
+    transform: translateY(-3px);
+    opacity: 0.8;
+}
+
+.pic {
+    opacity: 0.9;
+    width: 25px;
+    height: 25px;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    cursor: pointer;
+}
+
+.card-divs{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    text-align: center;
+    width: 400px;
+    height: 200px;
+    margin-left: 15px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: translateY(-3px);
+    opacity: 0.8;
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px;
+    width: 400px;
+}
+
+.card-images {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.button a{
+    text-decoration: none;
+    border: 2px solid var(--button-colour);
+    border-radius: 30px;
+    font-size: 20px;
+    color: black;
+    padding: 0 30px 0 30px
+}
+
+.button a:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: translateY(-1px);
+    background-color: var(--button-colour);
+}
+
+#highlight-button{
+    background-color: var(--button-colour) ;
+    color: black;
+}
