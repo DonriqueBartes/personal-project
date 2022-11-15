@@ -107,7 +107,7 @@ body {
 
 .nav-heading :hover {
     height: 20px;
-    border-bottom: 2px  solid black;
+    border-bottom: 2px solid black;
     width: 100%;
     transform: translateY(-3px);
     opacity: 0.8;
@@ -178,6 +178,9 @@ body {
 .form-control {
     font-family: var(--Montserrat);
     position: relative;
+    padding-bottom: 20px;
+    padding-top: 0;
+    margin-top: 0;
 }
 
 .form-control label {
@@ -186,7 +189,7 @@ body {
 }
 
 .form-control input {
-
+    
     border: 1px solid var(--border-outline-light);
     border-radius: 4px;
     display: block;
@@ -267,7 +270,7 @@ body {
     width: 100%;
 }
 
-.textBox {
+.text-box {
     font-family: var(--Montserrat);
     font-size: 16px;
 }

@@ -1,5 +1,5 @@
 var form = document.getElementById("form");
-var fullname = document.getElementById("firstname");
+var fullname = document.getElementById("first-name");
 var surname = document.getElementById("surname");
 var email = document.getElementById("email");
 

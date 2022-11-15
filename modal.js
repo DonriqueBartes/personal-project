@@ -1,12 +1,12 @@
-var modal = document.getElementById("theModal");
+var modal = document.getElementById("the-modal");
 
 var bttn = document.getElementById("sub-button");
 
-var modalBox = document.getElementById("modalText");
+var modalBox = document.getElementById("modal-text");
 
 var refBttn = document.getElementById("refresh-button");
 
-var fname = document.getElementById("firstname");
+var fname = document.getElementById("first-name");
 var sname = document.getElementById("surname");
 var eemail = document.getElementById("email");
 
