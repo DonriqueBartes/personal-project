@@ -6,21 +6,21 @@ var modalBox = document.getElementById("modal-text");
 
 var refBttn = document.getElementById("refresh-button");
 
-var fname = document.getElementById("first-name");
-var sname = document.getElementById("surname");
-var eemail = document.getElementById("email");
+const fname = document.getElementById("first-name");
+const sname = document.getElementById("surname");
+const eemail = document.getElementById("email");
 
 
 
-successMessage = function () {
+successMessage = () => {
     modalBox.innerHTML = 'Your message has been submitted successfully';
 }
 
-errorMessage = function () {
+errorMessage = () => {
     modalBox.innerHTML = 'Invalid details has been entered';
 }
 
-refBttn.onclick = function () {
+refBttn.onclick = () => {
     location.reload();
 
 }
@@ -30,8 +30,8 @@ let fnameCheck = fname;
 let snameCheck = sname;
 let emailCheck = eemail;
 
-validateEmail = function (emailCheck) {
-    var emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+validateEmail = (emailCheck) => {
+    const emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if (emailCheck.value.match(emailFormat)) {
         return true;
     }
@@ -39,7 +39,7 @@ validateEmail = function (emailCheck) {
 
 
 //Modal popup
-bttn.onclick = function () {
+bttn.onclick = () => {
 
     if (fname.value.length == 0) {
 
@@ -66,11 +66,10 @@ bttn.onclick = function () {
 }
 
 // Close modal
-window.onclick = function (event) {
+window.onclick = (event) => {
     if (event.target == modal) {
         modal.style.display = "none";
     }
 
 }
-
 

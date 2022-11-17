@@ -1,15 +1,18 @@
-var form = document.getElementById("form");
+const form = document.getElementById("form");
 var fullname = document.getElementById("first-name");
 var surname = document.getElementById("surname");
 var email = document.getElementById("email");
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
+document.addEventListener('DOMContentLoaded', (event) => {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
 
-    checkInputs();
+        checkInputs();
+    });
 });
 
-function checkInputs() {
+
+checkInputs = () => {
 
     const fullnameValue = fullname.value;
     const surnameValue = surname.value;
@@ -27,9 +30,9 @@ function checkInputs() {
         setSuccessFor(surname);
     }
 
-    if(emailValue === '') {
+    if (emailValue === '') {
         setErrorFor(email, 'Email cannot be blank');
-    } else if(!validEmail(emailValue)) {
+    } else if (!validEmail(emailValue)) {
         setErrorFor(email, 'Email is invalid');
     } else {
         setSuccessFor(email);
@@ -37,7 +40,7 @@ function checkInputs() {
 
 }
 
-function setErrorFor(input, message) {
+setErrorFor = (input, message)  => {
     console.log("inSetError function");
     const formControl = input.parentElement;
     const small = formControl.querySelector('small');
@@ -46,13 +49,13 @@ function setErrorFor(input, message) {
     formControl.className = 'form-control error';
 }
 
-function setSuccessFor(input) {
-    const  formControl = input.parentElement;
+setSuccessFor = (input) => {
+    const formControl = input.parentElement;
     formControl.className = "form-control success";
 
 
 }
 
-function validEmail(email) {
+validEmail = (email) => {
     return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
 }
