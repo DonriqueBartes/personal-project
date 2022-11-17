@@ -180,6 +180,7 @@ body {
     color: black;
 }
 
+<<<<<<<< HEAD:Pricing.css
 .pricing-intro {
     display: block;
     width: 80vw;
@@ -194,6 +195,9 @@ body {
     border-radius: 2%;
     border: 5px solid var(--egg);
 }
+========
+.back-to-top-button:hover .button-icon {
+>>>>>>>> 540d05f587b0518439e667ff3cf2b587a55582fb:Gallery.css
 
 .services-container {
     display: flex;
@@ -311,7 +315,13 @@ body {
     bottom: 50px;
     opacity: 0.5;
 }
+<<<<<<<< HEAD:Pricing.css
 .back-to-top-button {
+========
+
+.back-to-top-button {
+
+>>>>>>>> 540d05f587b0518439e667ff3cf2b587a55582fb:Gallery.css
     position: fixed;
     right: 30px;
     bottom: 50px;
